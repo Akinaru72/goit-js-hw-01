@@ -1,89 +1,153 @@
-# goit-js-hm-01
+# Homework #1
 
-Домашнє завдання №1
+## JavaScript. Basic Operations and Functions
 
-Створи репозиторій goit-js-hw-01 та склонюй його собі на комп’ютер.
-У папці goit-js-hw-01 створи структуру проєкта, як показано на схемі нижче.
+---
 
-Зверни увагу! Імена файлів та папок, а також їх структура вкладеності, мають відповідати вказаній схемі. В іншому разі робота не буде прийнята.
+## Description
 
-Прочитай кожне завдання і виконай його у відповідному файлі.
-Переконайся, що код відформатований за допомогою Prettier, а в консолі відсутні помилки і попередження під час відкриття живої сторінки завдання.
-Здай домашнє завдання на ментору на платформі LMS.
+In this homework assignment, you need to create a repository **goit-js-hw-01**, prepare the project structure, and implement three basic JavaScript tasks using functions, parameters, and template strings.
 
-Формат здачі: Домашня робота містить два посилання: на вихідні файли (посилання на репозиторій з кодом) і живу сторінку на GitHub Pages.
+---
 
-Задача 1. Замовлення дроїдів
+## Instructions
 
-Виконуй це завдання у файлі task-1.js
+- Create a repository **goit-js-hw-01** and clone it to your computer.
+- In the **goit-js-hw-01** folder, create the project structure according to the task requirements.
 
-Станція з продажу ремонтних дроїдів готова до запуску, залишилося написати програмне забезпечення для відділу продажів.
+![Project preview](https://s3.eu-north-1.amazonaws.com/lms.goit.files/429bf2a2-345f-4651-913b-0e9990aac0adFrame%2048582%20%282%29.jpg)
 
-Оголоси функцію makeTransaction, яка очікує два параметри, значення яких будуть задаватися під час її виклику: • quantity— перший параметр, число, що містить кількість замовлених дроїдів • pricePerDroid — другий параметр, число, що містить вартість одного дроїда
+- Carefully follow file and folder names and their nesting — otherwise the task will not be accepted.
+- Read each task and complete it in the corresponding file.
+- Make sure the code is formatted using **Prettier**.
+- There should be no errors or warnings in the console when opening the live page.
+- Submit the homework to the mentor on the **LMS** platform.
 
-Доповни код функції так, щоб вона повертала рядок з повідомленням про покупку ремонтних дроїдів: "You ordered <quantity> droids worth <totalPrice> credits!", де: • <quantity> — це кількість замовлених дроїдів • <totalPrice> — це загальна вартість замовлення, тобто вартість усіх замовлених дроїдів
+---
 
-Візьми код нижче і встав після оголошення своєї функції для перевірки коректності її роботи. У консоль будуть виведені результати її роботи.
+## Submission Format
 
+The homework should include **two links**:
+
+- To the source files (repository with code);
+- To the live page on **GitHub Pages**.
+
+---
+
+## Task 1. Droid Order
+
+**File:** `task-1.js`
+
+The repair droid sales station is ready to launch, the only thing left is to write the software for the sales department.
+
+### Assignment
+
+Declare a function `makeTransaction` that accepts two parameters:
+
+- `quantity` — the number of droids ordered (number);
+- `pricePerDroid` — the price of one droid (number).
+
+The function should return a string:
+
+"You ordered <quantity> droids worth <totalPrice> credits!"
+
+Where:
+
+- `<quantity>` — the number of droids ordered;
+- `<totalPrice>` — the total cost of the order.
+
+⚠️ For template strings, use **only backticks (`)**.
+
+### Check Code
+
+```js
 console.log(makeTransaction(5, 3000)); // "You ordered 5 droids worth 15000 credits!"
 console.log(makeTransaction(3, 1000)); // "You ordered 3 droids worth 3000 credits!"
 console.log(makeTransaction(10, 500)); // "You ordered 10 droids worth 5000 credits!"
+```
 
-Залиш цей код для перевірки ментором.
+### What the mentor will check
 
-На що буде звертати увагу ментор при перевірці:
+- The function `makeTransaction(quantity, pricePerDroid)` is declared.
+- `makeTransaction(5, 3000)` returns `"You ordered 5 droids worth 15000 credits!"`.
+- `makeTransaction(3, 1000)` returns `"You ordered 3 droids worth 3000 credits!"`.
+- `makeTransaction(10, 500)` returns `"You ordered 10 droids worth 5000 credits!"`.
+- All function call results are logged to the console.
+- `makeTransaction` with any valid arguments returns the correct value.
 
-Оголошена функція makeTransaction(quantity, pricePerDroid)
-Виклик makeTransaction(5, 3000) повертає "You ordered 5 droids worth 15000 credits!"
-Виклик makeTransaction(3, 1000) повертає "You ordered 3 droids worth 3000 credits!"
-Виклик makeTransaction(10, 500) повертає "You ordered 10 droids worth 5000 credits!"
-В консоль виведині всі результаті викликів
-Виклик makeTransaction з будь якими-валідними аргументами повертає правильне значення
+### Task 2. Shipping a Product
 
-Задача 2. Доставка товару
+**File:** `task-2.js`
 
-Виконуй це завдання у файлі task-2.js
+Declare a function `getShippingMessage` that expects three parameters:
 
-Оголоси функцію getShippingMessage, яка очікує три параметри, значення яких будуть задаватися під час її виклику: • country — перший параметр, рядок, що містить країну доставки • price — другий параметр, число, що містить загальну вартість товару • deliveryFee — третій параметр, число, що містить вартість доставки товару
+- `country` — the country to ship to (string)
+- `price` — the total price of the product (number)
+- `deliveryFee` — the shipping fee (number)
 
-Доповни код функції так, щоб вона повертала рядок з повідомленням про доставку товару в країну користувача: "Shipping to <country> will cost <totalPrice> credits", де: • <country> — це країни доставки • <totalPrice> — це загальна вартість замовлення, що включає вартість товару і його доставки
+The function should return a string:
 
-Візьми код нижче і встав після оголошення своєї функції для перевірки коректності її роботи. У консоль будуть виведені результати її роботи.
+"Shipping to <country> will cost <totalPrice> credits"
 
+where:
+
+- `<country>` — the destination country;
+- `<totalPrice>` — the total order cost, including the item price and delivery.
+
+⚠️ For template strings, use **only backticks (`)**. Using single `' '` or double `" "` quotes together with backticks is incorrect.
+
+### Test Code
+
+```js
 console.log(getShippingMessage("Australia", 120, 50)); // "Shipping to Australia will cost 170 credits"
 console.log(getShippingMessage("Germany", 80, 20)); // "Shipping to Germany will cost 100 credits"
 console.log(getShippingMessage("Sweden", 100, 20)); // "Shipping to Sweden will cost 120 credits"
+```
 
-Залиш цей код для перевірки ментором.
+Leave this code for the mentor to check.
 
-На що буде звертати увагу ментор при перевірці:
+What the mentor will pay attention to during the review:
 
-Оголошена функція getShippingMessage(country, price, deliveryFee)
-Виклик getShippingMessage("Australia", 120, 50) повертає "Shipping to Australia will cost 170 credits"
-Виклик getShippingMessage("Germany", 80, 20) повертає "Shipping to Germany will cost 100 credits"
-Виклик getShippingMessage("Sweden", 100, 20) повертає "Shipping to Sweden will cost 120 credits"
-Виклик getShippingMessage з будь якими-валідними аргументами повертає правильне значення
+- The function `getShippingMessage(country, price, deliveryFee)` is declared
+- Calling `getShippingMessage("Australia", 120, 50)` returns "Shipping to Australia will cost 170 credits"
+- Calling `getShippingMessage("Germany", 80, 20)` returns "Shipping to Germany will cost 100 credits"
+- Calling `getShippingMessage("Sweden", 100, 20)` returns "Shipping to Sweden will cost 120 credits"
+- Calling `getShippingMessage` with any valid arguments returns the correct value
 
-Задача 3. Ширина елемента
+---
 
-Виконуй це завдання у файлі task-3.js
+# Task 3. Element Width
 
-Оголоси функцію getElementWidth, яка очікує три параметри, значення яких будуть задаватися під час її виклику: • content— перший параметр, ширина контенту • padding — другий параметр, значення горизонтального падінгу для кожної зі сторін • border — третій параметр, значення товщини бордера для кожної зі сторін Значення всіх параметрів будуть рядками формату Npx де N — це довільне число, ціле або дробове.
+Complete this task in the file `task-3.js`.
 
-Доповни код функції так, щоб вона повертала число —загальну ширину елемента. При розрахунку загальної ширини орієнтуйся на те, що значення box-sizing дорівнює border-box.
+Declare a function `getElementWidth` that expects three parameters:
 
-Візьми код нижче і встав після оголошення своєї функції для перевірки коректності її роботи. У консоль будуть виведені результати її роботи.
+- `content` — the width of the content
+- `padding` — the horizontal padding value for each side
+- `border` — the border thickness for each side
 
+All parameter values will be strings in the format `Npx`, where `N` can be any number, integer or fractional.
+
+Complete the function so that it returns a number — the total width of the element. When calculating the total width, assume that `box-sizing` is set to `border-box`.
+
+### Test code
+
+```js
 console.log(getElementWidth("50px", "8px", "4px")); // 74
 console.log(getElementWidth("60px", "12px", "8.5px")); // 101
 console.log(getElementWidth("200px", "0px", "0px")); // 200
+```
 
-Залиш цей код для перевірки ментором.
+Leave this code for the mentor to check.
 
-На що буде звертати увагу ментор при перевірці:
+What the mentor will pay attention to during the review:
 
-Оголошена функція getElementWidth(content, padding, border)
-Виклик getElementWidth("50px", "8px", "4px") повертає число 74
-Виклик getElementWidth("60px", "12px", "8.5px") повертає число 101
-Виклик getElementWidth("200px", "0px", "0px") повертає число 200
-Виклик getElementWidth з будь якими-валідними аргументами повертає правильне значення
+- The function `getElementWidth(content, padding, border)` is declared
+- Calling `getElementWidth("50px", "8px", "4px")` returns the number 74
+- Calling `getElementWidth("60px", "12px", "8.5px")` returns the number 101
+- Calling `getElementWidth("200px", "0px", "0px")` returns the number 200
+- Calling `getElementWidth` with any valid arguments returns the correct value
+
+---
+
+**Live page: [GitHub Pages](https://akinaru72.github.io/goit-js-hw-01/)**
