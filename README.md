@@ -15,7 +15,7 @@ In this homework assignment, you need to create a repository **goit-js-hw-01**, 
 - Create a repository **goit-js-hw-01** and clone it to your computer.
 - In the **goit-js-hw-01** folder, create the project structure according to the task requirements.
 
-![Project preview](https://s3.eu-north-1.amazonaws.com/lms.goit.files/429bf2a2-345f-4651-913b-0e9990aac0adFrame%2048582%20%282%29.jpg)
+![Project preview](assets/homework-js-1.jpg)
 
 - Carefully follow file and folder names and their nesting — otherwise the task will not be accepted.
 - Read each task and complete it in the corresponding file.
