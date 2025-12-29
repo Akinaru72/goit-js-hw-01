@@ -75,6 +75,8 @@ console.log(makeTransaction(10, 500)); // "You ordered 10 droids worth 5000 cred
 - В консоль виведені всі результати викликів.
 - Виклик `makeTransaction` з будь-якими валідними аргументами повертає правильне значення.
 
+---
+
 ## Задача 2. Доставка товару
 
 **Файл:** `task-2.js`
@@ -113,6 +115,8 @@ console.log(getShippingMessage("Sweden", 100, 20)); // "Shipping to Sweden will 
 - Виклик `getShippingMessage("Germany", 80, 20)` повертає "Shipping to Germany will cost 100 credits"
 - Виклик `getShippingMessage("Sweden", 100, 20)` повертає "Shipping to Sweden will cost 120 credits"
 - Виклик `getShippingMessage` з будь-якими валідними аргументами повертає правильне значення
+
+---
 
 ## Задача 3. Ширина елемента
 

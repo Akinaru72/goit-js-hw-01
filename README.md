@@ -75,6 +75,8 @@ console.log(makeTransaction(10, 500)); // "You ordered 10 droids worth 5000 cred
 - All function call results are logged to the console.
 - `makeTransaction` with any valid arguments returns the correct value.
 
+---
+
 ## Task 2. Shipping a Product
 
 **File:** `task-2.js`
