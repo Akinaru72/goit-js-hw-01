@@ -114,7 +114,7 @@ console.log(getShippingMessage("Sweden", 100, 20)); // "Shipping to Sweden will 
 - Виклик `getShippingMessage("Sweden", 100, 20)` повертає "Shipping to Sweden will cost 120 credits"
 - Виклик `getShippingMessage` з будь-якими валідними аргументами повертає правильне значення
 
-# Задача 3. Ширина елемента
+## Задача 3. Ширина елемента
 
 Виконуй це завдання у файлі `task-3.js`.
 
